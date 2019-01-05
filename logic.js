@@ -20,7 +20,7 @@ var myMap = L.map("map", {
    // shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
  });
- var BrooklynNetsIcon = L.icon({
+ var NetsIcon = L.icon({
     iconUrl : "Images/BrooklynNets.png",
     iconSize:     [38, 95], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
