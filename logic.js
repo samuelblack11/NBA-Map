@@ -6,7 +6,7 @@ var myMap = L.map("map", {
  
  var HawksIcon = L.icon({
     iconUrl : "Images/AtlantaHawks.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 65], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -14,15 +14,15 @@ var myMap = L.map("map", {
  });
  var CelticsIcon = L.icon({
     iconUrl : "Images/BostonCeltics.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 65], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
  });
- var BrooklynNetsIcon = L.icon({
+ var NetsIcon = L.icon({
     iconUrl : "Images/BrooklynNets.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [43, 65], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -30,7 +30,7 @@ var myMap = L.map("map", {
  });
  var HornetsIcon = L.icon({
     iconUrl : "Images/CharlotteHornets.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [58, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     //shadowAnchor: [4, 62],  // the same for the shadow
@@ -38,7 +38,7 @@ var myMap = L.map("map", {
  });
  var BullsIcon = L.icon({
     iconUrl : "Images/ChicagoBulls.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -46,7 +46,7 @@ var myMap = L.map("map", {
  });
   var CavaliersIcon = L.icon({
     iconUrl : "Images/ClevelandCavaliers.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -54,7 +54,7 @@ var myMap = L.map("map", {
  });
    var MavericksIcon = L.icon({
     iconUrl : "Images/DallasMavericks.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -62,7 +62,7 @@ var myMap = L.map("map", {
  });
     var NuggetsIcon = L.icon({
     iconUrl : "Images/DenverNuggets.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 65], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -70,7 +70,7 @@ var myMap = L.map("map", {
  });
  var PistonsIcon = L.icon({
     iconUrl : "Images/DetroitPistons.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -78,7 +78,7 @@ var myMap = L.map("map", {
  });
   var WarriorsIcon = L.icon({
     iconUrl : "Images/GoldenStateWarriors.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -86,7 +86,7 @@ var myMap = L.map("map", {
  });
  var RocketsIcon = L.icon({
     iconUrl : "Images/HoustonRockets.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -94,7 +94,7 @@ var myMap = L.map("map", {
  });
  var PacersIcon = L.icon({
     iconUrl : "Images/IndianaPacers.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -102,7 +102,7 @@ var myMap = L.map("map", {
  });
  var ClippersIcon = L.icon({
     iconUrl : "Images/LosAngelesClippers.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 65], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -110,7 +110,7 @@ var myMap = L.map("map", {
  });
  var LakersIcon = L.icon({
     iconUrl : "Images/LosAngelesLakers.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [45, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -118,7 +118,7 @@ var myMap = L.map("map", {
  });
  var GrizzliesIcon = L.icon({
     iconUrl : "Images/MemphisGrizzlies.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -134,7 +134,7 @@ var myMap = L.map("map", {
  });
  var BucksIcon = L.icon({
     iconUrl : "Images/MilwaukeeBucks.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -142,7 +142,7 @@ var myMap = L.map("map", {
  });
  var TimberwolvesIcon = L.icon({
     iconUrl : "Images/MinnesotaTimberwolves.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 65], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -150,7 +150,7 @@ var myMap = L.map("map", {
  });
  var PelicansIcon = L.icon({
     iconUrl : "Images/NewOrleansPelicans.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [58, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -158,7 +158,7 @@ var myMap = L.map("map", {
  });
  var KnicksIcon = L.icon({
     iconUrl : "Images/NewYorkKnicks.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [53, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -166,7 +166,7 @@ var myMap = L.map("map", {
  });
   var ThunderIcon = L.icon({
     iconUrl : "Images/OklahomaCityThunder.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [68, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -174,7 +174,7 @@ var myMap = L.map("map", {
  });
  var MagicIcon = L.icon({
     iconUrl : "Images/OrlandoMagic.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -190,7 +190,7 @@ var myMap = L.map("map", {
  });
  var SunsIcon = L.icon({
     iconUrl : "Images/PhoenixSuns.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -198,7 +198,7 @@ var myMap = L.map("map", {
  });
  var TrailblazersIcon = L.icon({
     iconUrl : "Images/PortlandTrailBlazers.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -206,7 +206,7 @@ var myMap = L.map("map", {
  });
  var KingsIcon = L.icon({
     iconUrl : "Images/SacramentoKings.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -214,7 +214,7 @@ var myMap = L.map("map", {
  });
  var SpursIcon = L.icon({
     iconUrl : "Images/SanAntonioSpurs.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -222,7 +222,7 @@ var myMap = L.map("map", {
  });
  var RaptorsIcon = L.icon({
     iconUrl : "Images/TorontoRaptors.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -230,7 +230,7 @@ var myMap = L.map("map", {
  });
   var JazzIcon = L.icon({
     iconUrl : "Images/UtahJazz.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -238,7 +238,7 @@ var myMap = L.map("map", {
  });
  var WizardsIcon = L.icon({
     iconUrl : "Images/WashingtonWizards.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [38, 65], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -271,7 +271,7 @@ var myMap = L.map("map", {
  {
   team_name: "Brooklyn Nets",
   stadium_name: "Barclays Center",
-  location: [40.6826, -73.9754],
+  location: [40.6826, -72.9754],
   icons: NetsIcon,
   url: "https://stats.nba.com/team/1610612751/franchise-leaders/"
  },
@@ -341,14 +341,14 @@ var myMap = L.map("map", {
  {
   team_name: "Los Angeles Clippers",
   stadium_name: "Staples Center",
-  location: [34.0430, -118.2673],
+  location: [33.3430, -117.4673],
   icons: ClippersIcon,
   url: "https://stats.nba.com/team/1610612746/franchise-leaders/"
  },
  {
   team_name: "Los Angeles Lakers",
   stadium_name: "Staples Center",
-  location: [34.0430, -118.2673],
+  location: [33.8030, -118.2673],
   icons: LakersIcon,
   url: "https://stats.nba.com/team/1610612747/franchise-leaders/"
  },
@@ -390,7 +390,7 @@ var myMap = L.map("map", {
  {
   team_name: "New York Knicks",
   stadium_name: "Madison Square Garden",
-  location: [40.7505, -73.9934],
+  location: [41.5005, -73.9934],
   icons: KnicksIcon,
   url: "https://stats.nba.com/team/1610612752/franchise-leaders/"
  },
@@ -472,6 +472,6 @@ var myMap = L.map("map", {
   L.marker(city.location, 
   {icon: city.icons}
   )
-    .bindPopup("<h1>" + city.name + "</h1> <hr> <h3>Population " + city.population + "</h3>")
+    .bindPopup("<h1>" + city.team_name + "</h1> <hr> <h3> "+ city.stadium_name + "</h3> <hr> <a href =" + city.url +"> View All Time Stats </a>")
     .addTo(myMap);
  }
