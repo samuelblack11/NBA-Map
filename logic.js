@@ -4,10 +4,154 @@ var myMap = L.map("map", {
   zoom: 5
  });
  
+ var HawksIcon = L.icon({
+    iconUrl : "Images/AtlantaHawks.png",
+    iconSize:     [38, 95], // size of the icon
+    //shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var CelticsIcon = L.icon({
+    iconUrl : "Images/BostonCeltics.png",
+    iconSize:     [38, 95], // size of the icon
+    //shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var BrooklynNetsIcon = L.icon({
+    iconUrl : "Images/BrooklynNets.png",
+    iconSize:     [38, 95], // size of the icon
+    //shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var HornetsIcon = L.icon({
+    iconUrl : "Images/CharlotteHornets.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    //shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var BullsIcon = L.icon({
+    iconUrl : "Images/ChicagoBulls.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+  var CavaliersIcon = L.icon({
+    iconUrl : "Images/ClevelandCavaliers.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+   var MavericksIcon = L.icon({
+    iconUrl : "Images/DallasMavericks.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+    var NuggetsIcon = L.icon({
+    iconUrl : "Images/DenverNuggets.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var PistonsIcon = L.icon({
+    iconUrl : "Images/DetroitPistons.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+  var WarriorsIcon = L.icon({
+    iconUrl : "Images/GoldenStateWarriors.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var RocketsIcon = L.icon({
+    iconUrl : "Images/HoustonRockets.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var PacersIcon = L.icon({
+    iconUrl : "Images/IndianaPacers.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var ClippersIcon = L.icon({
+    iconUrl : "Images/LosAngelesClippers.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
  var LakersIcon = L.icon({
     iconUrl : "Images/LosAngelesLakers.png",
     iconSize:     [38, 95], // size of the icon
-    //shadowSize:   [50, 64], // size of the shadow
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var GrizzliesIcon = L.icon({
+    iconUrl : "Images/MemphisGrizzlies.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var HeatIcon = L.icon({
+    iconUrl : "Images/MiamiHeat.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var BucksIcon = L.icon({
+    iconUrl : "Images/MilwaukeeBucks.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var TimberwolvesIcon = L.icon({
+    iconUrl : "Images/MinnesotaTimberwolves.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var PelicansIcon = L.icon({
+    iconUrl : "Images/NewOrleansPelicans.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
@@ -17,11 +161,83 @@ var myMap = L.map("map", {
     iconSize:     [38, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-    //shadowAnchor: [4, 62],  // the same for the shadow
+   // shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
  });
- var WarriorsIcon = L.icon({
-    iconUrl : "Images/GoldenStateWarriors.png",
+  var ThunderIcon = L.icon({
+    iconUrl : "Images/OklahomaCityThunder.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var MagicIcon = L.icon({
+    iconUrl : "Images/OrlandoMagic.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var SixersIcon = L.icon({
+    iconUrl : "Images/Philadelphia76ers.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var SunsIcon = L.icon({
+    iconUrl : "Images/PhoenixSuns.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var TrailblazersIcon = L.icon({
+    iconUrl : "Images/PortlandTrailBlazers.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var KingsIcon = L.icon({
+    iconUrl : "Images/SacramentoKings.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var SpursIcon = L.icon({
+    iconUrl : "Images/SanAntonioSpurs.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var RaptorsIcon = L.icon({
+    iconUrl : "Images/TorontoRaptors.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+  var JazzIcon = L.icon({
+    iconUrl : "Images/UtahJazz.png",
+    iconSize:     [38, 95], // size of the icon
+   // shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+   // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+ });
+ var WizardsIcon = L.icon({
+    iconUrl : "Images/WashingtonWizards.png",
     iconSize:     [38, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
@@ -179,6 +395,13 @@ var myMap = L.map("map", {
   url: "https://stats.nba.com/team/1610612752/franchise-leaders/"
  },
  {
+  team_name: "Oklahoma City Thunder",
+  stadium_name: "Amway Center",
+  location: [35.4634, -97.5151],
+  icons: ThunderIcon,
+  url:"https://stats.nba.com/team/1610612760/franchise-leaders/"
+ },
+ {
   team_name: "Orlando Magic",
   stadium_name: "Amway Center",
   location: [28.539167, -81.383611],
@@ -203,7 +426,7 @@ var myMap = L.map("map", {
   team_name: "Portland Trail Blazers",
   stadium_name: "Moda Center",
   location: [45.531667, -122.666667],
-  icons: BlazersIcon,
+  icons: TrailblazersIcon,
   url:"https://stats.nba.com/team/1610612757/franchise-leaders/"
  },
  {
