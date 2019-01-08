@@ -397,7 +397,7 @@ var myMap = L.map("map", {
   ast_lead: assists[9],
   reb_lead: rebounds[9],
   stl_lead:steals[9],
-  blk_lead:blocks[9]
+  blk_lead:blocks[9],
  },
  {
   team_name: teams[8],
@@ -518,7 +518,7 @@ var myMap = L.map("map", {
  },
  {
   team_name: teams[18],
-  stadium_name: "Amway Center",
+  stadium_name: "Chesapeake Energy Arena",
   location: [35.4634, -97.5151],
   icons: ThunderIcon,
   url:"https://stats.nba.com/team/1610612760/franchise-leaders/",
