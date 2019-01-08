@@ -1,9 +1,19 @@
+
+var tableData = data;
+
+var x = String(data);
+x = x.substring(1, x.length-1);
+x;
+console.log(x);
+
+
 // Create a map object
 var myMap = L.map("map", {
   center: [37.09, -95.71],
   zoom: 5
  });
  
+var Knicks_Block_Lead = 
  var HawksIcon = L.icon({
     iconUrl : "Images/AtlantaHawks.png",
     iconSize:     [38, 65], // size of the icon
@@ -388,13 +398,6 @@ var myMap = L.map("map", {
   url: "https://stats.nba.com/team/1610612740/franchise-leaders/"
  },
  {
-  team_name: "New York Knicks",
-  stadium_name: "Madison Square Garden",
-  location: [41.5005, -73.9934],
-  icons: KnicksIcon,
-  url: "https://stats.nba.com/team/1610612752/franchise-leaders/"
- },
- {
   team_name: "Oklahoma City Thunder",
   stadium_name: "Amway Center",
   location: [35.4634, -97.5151],
@@ -462,16 +465,41 @@ var myMap = L.map("map", {
   stadium_name: "Capital One Arena",
   location: [38.898056, -77.020833],
   icons: WizardsIcon,
-  url:"https://stats.nba.com/team/1610612764/franchise-leaders/"
+  url:"https://stats.nba.com/team/1610612764/franchise-leaders/",
+  pt_lead: "John Wall",
+  ast_lead: "",
+  reb_lead: "",
+  stl_lead: "",
+  blk_lead:""
+ },
+  {
+  team_name: "New York Knicks",
+  stadium_name: "Madison Square Garden",
+  location: [41.5005, -73.9934],
+  icons: KnicksIcon,
+  url: "https://stats.nba.com/team/1610612752/franchise-leaders/",
+  //pt_lead: dbo.collection("team_leaders").distinct("pointsleader", {"teamname": "New York Knicks"})
+  //pt_lead: knicks_pt_lead.
+  pt_lead: "undefined"
  }
 ];
  
+url_list = []
+console.log(url_list)
+
+ for (var i = 0; i < cities.length; i++) {
+  var city = cities[i];
+  url_list.push(city.url)
+}
+
+
+
  // Loop through the cities array and create one marker for each city, bind a popup containing its name and population add it to the map
  for (var i = 0; i < cities.length; i++) {
   var city = cities[i];
   L.marker(city.location, 
   {icon: city.icons}
   )
-    .bindPopup("<h1>" + city.team_name + "</h1> <hr> <h3> "+ city.stadium_name + "</h3> <hr> <h3>Points: ""</h3> <hr> <a href =" + city.url +"> View All Time Stats </a>")
+    .bindPopup("<h1>"+city.team_name+"</h1> <h3> "+ city.stadium_name + "<hr><br> All Time Stat Leaders (Per Game) <hr> Points: " +city.pt_lead+ "<br> Assists: " +city.ast_lead+ "<br> Rebounds: "+city.reb_lead+" <br> Steals: "+city.stl_lead+" <br> Blocks: "+city.blk_lead+" </h3> <hr>  <a href =" + city.url +"> View All Time Stats </a>")
     .addTo(myMap);
  }
