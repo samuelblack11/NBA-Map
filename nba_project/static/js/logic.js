@@ -3,8 +3,20 @@
 // Create a map object
 var myMap = L.map("map", {
   center: [37.09, -95.71],
-  zoom: 5
+  minZoom: 4.6,
+  maxZoom: 6,
+  zoom: 4.5
  });
+
+
+
+L.easyButton( '<span class="star">&starf;</span>', function(){
+window.location.href = "/scrape"}, 'Scrape Data from NBA.com').addTo(myMap);
+
+L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
+  window.location.href = "data.html";
+},'See the Stat Table').addTo(myMap);
+
  
  var HawksIcon = L.icon({
     iconUrl : "static/photos/AtlantaHawks.png",
@@ -32,7 +44,7 @@ var myMap = L.map("map", {
  });
  var HornetsIcon = L.icon({
     iconUrl : "static/photos/CharlotteHornets.png",
-    iconSize:     [58, 75], // size of the icon
+    iconSize:     [68, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     //shadowAnchor: [4, 62],  // the same for the shadow
@@ -64,7 +76,7 @@ var myMap = L.map("map", {
  });
     var NuggetsIcon = L.icon({
     iconUrl : "static/photos/DenverNuggets.png",
-    iconSize:     [38, 65], // size of the icon
+    iconSize:     [48, 65], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -72,7 +84,7 @@ var myMap = L.map("map", {
  });
  var PistonsIcon = L.icon({
     iconUrl : "static/photos/DetroitPistons.png",
-    iconSize:     [38, 75], // size of the icon
+    iconSize:     [48, 75], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -80,7 +92,7 @@ var myMap = L.map("map", {
  });
   var WarriorsIcon = L.icon({
     iconUrl : "static/photos/GoldenStateWarriors.png",
-    iconSize:     [38, 75], // size of the icon
+    iconSize:     [48, 70], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -88,7 +100,7 @@ var myMap = L.map("map", {
  });
  var RocketsIcon = L.icon({
     iconUrl : "static/photos/HoustonRockets.png",
-    iconSize:     [48, 95], // size of the icon
+    iconSize:     [58, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -104,7 +116,7 @@ var myMap = L.map("map", {
  });
  var ClippersIcon = L.icon({
     iconUrl : "static/photos/LosAngelesClippers.png",
-    iconSize:     [38, 65], // size of the icon
+    iconSize:     [48, 65], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -112,7 +124,7 @@ var myMap = L.map("map", {
  });
  var LakersIcon = L.icon({
     iconUrl : "static/photos/LosAngelesLakers.png",
-    iconSize:     [45, 95], // size of the icon
+    iconSize:     [60, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -128,7 +140,7 @@ var myMap = L.map("map", {
  });
  var HeatIcon = L.icon({
     iconUrl : "static/photos/MiamiHeat.png",
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [48, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -152,7 +164,7 @@ var myMap = L.map("map", {
  });
  var PelicansIcon = L.icon({
     iconUrl : "static/photos/NewOrleansPelicans.png",
-    iconSize:     [58, 95], // size of the icon
+    iconSize:     [58, 105], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -168,7 +180,7 @@ var myMap = L.map("map", {
  });
   var ThunderIcon = L.icon({
     iconUrl : "static/photos/OklahomaCityThunder.png",
-    iconSize:     [68, 95], // size of the icon
+    iconSize:     [78, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -176,7 +188,7 @@ var myMap = L.map("map", {
  });
  var MagicIcon = L.icon({
     iconUrl : "static/photos/OrlandoMagic.png",
-    iconSize:     [48, 95], // size of the icon
+    iconSize:     [58, 115], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -200,7 +212,7 @@ var myMap = L.map("map", {
  });
  var TrailblazersIcon = L.icon({
     iconUrl : "static/photos/PortlandTrailBlazers.png",
-    iconSize:     [38, 75], // size of the icon
+    iconSize:     [48, 70], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -208,7 +220,7 @@ var myMap = L.map("map", {
  });
  var KingsIcon = L.icon({
     iconUrl : "static/photos/SacramentoKings.png",
-    iconSize:     [38, 85], // size of the icon
+    iconSize:     [48, 70], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -216,7 +228,7 @@ var myMap = L.map("map", {
  });
  var SpursIcon = L.icon({
     iconUrl : "static/photos/SanAntonioSpurs.png",
-    iconSize:     [48, 95], // size of the icon
+    iconSize:     [58, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -232,7 +244,7 @@ var myMap = L.map("map", {
  });
   var JazzIcon = L.icon({
     iconUrl : "static/photos/UtahJazz.png",
-    iconSize:     [48, 85], // size of the icon
+    iconSize:     [58, 85], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -267,7 +279,8 @@ var myMap = L.map("map", {
   ast_lead: assists[0],
   reb_lead: rebounds[0],
   stl_lead:steals[0],
-  blk_lead:blocks[0]
+  blk_lead:blocks[0],
+  stadium_image: "static/photos/AtlantaHawksStadium.png"
  },
  {
   team_name: teams[1],
@@ -280,7 +293,8 @@ var myMap = L.map("map", {
   ast_lead: assists[1],
   reb_lead: rebounds[1],
   stl_lead:steals[1],
-  blk_lead:blocks[1]
+  blk_lead:blocks[1],
+  stadium_image: "static/photos/BostonCelticsStadium.png"
  },
  {
   team_name: teams[2],
@@ -293,7 +307,8 @@ var myMap = L.map("map", {
   ast_lead: assists[2],
   reb_lead: rebounds[2],
   stl_lead:steals[2],
-  blk_lead:blocks[2]
+  blk_lead:blocks[2],
+  stadium_image: "static/photos/BrooklynNetsStadium.png"
  },
  {
   team_name: teams[3],
@@ -306,7 +321,8 @@ var myMap = L.map("map", {
   ast_lead: assists[3],
   reb_lead: rebounds[3],
   stl_lead:steals[3],
-  blk_lead:blocks[3]
+  blk_lead:blocks[3],
+  stadium_image: "static/photos/CharlotteHornetsStadium.png"
  },
  {
   team_name: "Chicago Bulls",
@@ -319,7 +335,8 @@ var myMap = L.map("map", {
   ast_lead: "Ennis Whatley (7.0)",
   reb_lead: "Dennis Rodman (15.3)",
   stl_lead: "Michael Jordan (2.5)",
-  blk_lead: "Artis Gilmore (2.1)"
+  blk_lead: "Artis Gilmore (2.1)",
+  stadium_image: "static/photos/ChicagoBullsStadium.png"
  },
  {
   team_name: "Cleveland Cavaliers",
@@ -332,7 +349,8 @@ var myMap = L.map("map", {
   ast_lead: "Andre Miller (8.2)",
   reb_lead: "Rick Roberson (12.0)",
   stl_lead: "Ron Harper (2.3)",
-  blk_lead: "Larry Nance (2.5)"
+  blk_lead: "Larry Nance (2.5)",
+  stadium_image: "static/photos/ClevelandCavaliersStadium.png"
  },
  {
   team_name: teams[4],
@@ -345,7 +363,8 @@ var myMap = L.map("map", {
   ast_lead: assists[4],
   reb_lead: rebounds[4],
   stl_lead:steals[4],
-  blk_lead:blocks[4]
+  blk_lead:blocks[4],
+  stadium_image: "static/photos/DallasMavericksStadium.png"
  },
  {
   team_name: teams[5],
@@ -358,7 +377,8 @@ var myMap = L.map("map", {
   ast_lead: assists[5],
   reb_lead: rebounds[5],
   stl_lead:steals[5],
-  blk_lead:blocks[5]
+  blk_lead:blocks[5],
+  stadium_image: "static/photos/DenverNuggetsStadium.png"
  },
  {
   team_name: teams[6],
@@ -371,12 +391,13 @@ var myMap = L.map("map", {
   ast_lead: assists[6],
   reb_lead: rebounds[6],
   stl_lead:steals[6],
-  blk_lead:blocks[6]
+  blk_lead:blocks[6],
+  stadium_image: "static/photos/DetroitPistonsStadium.png"
  },
  {
   team_name: teams[7],
   stadium_name: "Oracle Arena",
-  location: [37.7503, -122.2030],
+  location: [37.7503, -122.5030],
   icons: WarriorsIcon,
   url: "https://stats.nba.com/team/1610612744/franchise-leaders/",
   gp_lead:games[7],
@@ -384,7 +405,8 @@ var myMap = L.map("map", {
   ast_lead: assists[7],
   reb_lead: rebounds[7],
   stl_lead:steals[7],
-  blk_lead:blocks[7]
+  blk_lead:blocks[7],
+  stadium_image: "static/photos/GoldenStateWarriorsStadium.png"
  },
  {
   team_name: teams[9],
@@ -398,6 +420,7 @@ var myMap = L.map("map", {
   reb_lead: rebounds[9],
   stl_lead:steals[9],
   blk_lead:blocks[9],
+  stadium_image: "static/photos/HoustonRocketsStadium.png"
  },
  {
   team_name: teams[8],
@@ -410,12 +433,13 @@ var myMap = L.map("map", {
   ast_lead: assists[8],
   reb_lead: rebounds[8],
   stl_lead:steals[8],
-  blk_lead:blocks[8]
+  blk_lead:blocks[8],
+  stadium_image: "static/photos/IndianaPacersStadium.png"
  },
  {
   team_name: teams[10],
   stadium_name: "Staples Center",
-  location: [33.3430, -117.4673],
+  location: [32.8430, -117.0673],
   icons: ClippersIcon,
   url: "https://stats.nba.com/team/1610612746/franchise-leaders/",
   gp_lead:games[10],
@@ -423,7 +447,8 @@ var myMap = L.map("map", {
   ast_lead: assists[10],
   reb_lead: rebounds[10],
   stl_lead:steals[10],
-  blk_lead:blocks[10]
+  blk_lead:blocks[10],
+  stadium_image: "static/photos/LosAngelesClippersStadium.png"
  },
  {
   team_name: teams[11],
@@ -436,7 +461,8 @@ var myMap = L.map("map", {
   ast_lead: assists[11],
   reb_lead: rebounds[11],
   stl_lead:steals[11],
-  blk_lead:blocks[11]
+  blk_lead:blocks[11],
+  stadium_image: "static/photos/LosAngelesLakersStadium.png"
  },
  {
   team_name: teams[12],
@@ -449,7 +475,8 @@ var myMap = L.map("map", {
   ast_lead: assists[12],
   reb_lead: rebounds[12],
   stl_lead:steals[12],
-  blk_lead:blocks[12]
+  blk_lead:blocks[12],
+  stadium_image: "static/photos/MemphisGrizzliesStadium.png"
  },
  {
   team_name: teams[13],
@@ -462,7 +489,8 @@ var myMap = L.map("map", {
   ast_lead: assists[13],
   reb_lead: rebounds[13],
   stl_lead:steals[13],
-  blk_lead:blocks[13]
+  blk_lead:blocks[13],
+  stadium_image: "static/photos/MiamiHeatStadium.png"
  },
  {
   team_name: teams[14],
@@ -475,7 +503,8 @@ var myMap = L.map("map", {
   ast_lead: assists[14],
   reb_lead: rebounds[14],
   stl_lead:steals[14],
-  blk_lead:blocks[14]
+  blk_lead:blocks[14],
+  stadium_image: "static/photos/MilwaukeeBucksStadium.png"
  },
  {
   team_name: teams[15],
@@ -488,7 +517,8 @@ var myMap = L.map("map", {
   ast_lead: assists[15],
   reb_lead: rebounds[15],
   stl_lead:steals[15],
-  blk_lead:blocks[15]
+  blk_lead:blocks[15],
+  stadium_image: "static/photos/MinnesotaTimberwolvesStadium.png"
  },
  {
   team_name: teams[16],
@@ -501,7 +531,8 @@ var myMap = L.map("map", {
   ast_lead: assists[16],
   reb_lead: rebounds[16],
   stl_lead:steals[16],
-  blk_lead:blocks[16]
+  blk_lead:blocks[16],
+  stadium_image: "static/photos/NewOrleansPelicansStadium.png"
  },
   {
   team_name: teams[17],
@@ -514,7 +545,8 @@ var myMap = L.map("map", {
   ast_lead: assists[17],
   reb_lead: rebounds[17],
   stl_lead:steals[17],
-  blk_lead:blocks[17]
+  blk_lead:blocks[17],
+  stadium_image: "static/photos/NewYorkKnicksStadium.png"
  },
  {
   team_name: teams[18],
@@ -527,7 +559,8 @@ var myMap = L.map("map", {
   ast_lead: assists[18],
   reb_lead: rebounds[18],
   stl_lead:steals[18],
-  blk_lead:blocks[18]
+  blk_lead:blocks[18],
+  stadium_image: "static/photos/OklahomaCityThunderStadium.png"
  },
  {
   team_name: teams[19],
@@ -540,7 +573,8 @@ var myMap = L.map("map", {
   ast_lead: assists[19],
   reb_lead: rebounds[19],
   stl_lead:steals[19],
-  blk_lead:blocks[19]
+  blk_lead:blocks[19],
+  stadium_image: "static/photos/OrlandoMagicStadium.png"
  },
  {
   team_name: teams[20],
@@ -553,7 +587,8 @@ var myMap = L.map("map", {
   ast_lead: assists[20],
   reb_lead: rebounds[20],
   stl_lead:steals[20],
-  blk_lead:blocks[20]
+  blk_lead:blocks[20],
+  stadium_image: "static/photos/Philadelphia76ersStadium.png"
  },
  {
   team_name: teams[21],
@@ -566,12 +601,13 @@ var myMap = L.map("map", {
   ast_lead: assists[21],
   reb_lead: rebounds[21],
   stl_lead:steals[21],
-  blk_lead:blocks[21]
+  blk_lead:blocks[21],
+  stadium_image: "static/photos/PhoenixSunsStadium.png"
  },
  {
   team_name: teams[22],
   stadium_name: "Moda Center",
-  location: [45.531667, -122.666667],
+  location: [45.031667, -122.666667],
   icons: TrailblazersIcon,
   url:"https://stats.nba.com/team/1610612757/franchise-leaders/",
   gp_lead:games[22],
@@ -579,12 +615,13 @@ var myMap = L.map("map", {
   ast_lead: assists[22],
   reb_lead: rebounds[22],
   stl_lead:steals[22],
-  blk_lead:blocks[22]
+  blk_lead:blocks[22],
+  stadium_image: "static/photos/PortlandTrailBlazersStadium.png"
  },
  {
   team_name: teams[23],
   stadium_name: "Golden 1 Center",
-  location: [38.580361, -121.499611],
+  location: [38.580361, -121.099611],
   icons: KingsIcon,
   url:"https://stats.nba.com/team/1610612758/franchise-leaders/",
   gp_lead:games[23],
@@ -592,7 +629,8 @@ var myMap = L.map("map", {
   ast_lead: assists[23],
   reb_lead: rebounds[23],
   stl_lead:steals[23],
-  blk_lead:blocks[23]
+  blk_lead:blocks[23],
+  stadium_image: "static/photos/SacramentoKingsStadium.png"
  },
  {
   team_name: teams[24],
@@ -605,7 +643,8 @@ var myMap = L.map("map", {
   ast_lead: assists[22],
   reb_lead: rebounds[24],
   stl_lead:steals[24],
-  blk_lead:blocks[24]
+  blk_lead:blocks[24],
+  stadium_image: "static/photos/SanAntonioSpursStadium.png"
  },
  {
   team_name: teams[25],
@@ -618,7 +657,8 @@ var myMap = L.map("map", {
   ast_lead: assists[24],
   reb_lead: rebounds[25],
   stl_lead:steals[25],
-  blk_lead:blocks[25]
+  blk_lead:blocks[25],
+  stadium_image: "static/photos/TorontoRaptorsStadium.png"
  },
  {
   team_name: teams[26],
@@ -631,12 +671,13 @@ var myMap = L.map("map", {
   ast_lead: assists[25],
   reb_lead: rebounds[26],
   stl_lead:steals[26],
-  blk_lead:blocks[26]
+  blk_lead:blocks[26],
+  stadium_image: "static/photos/UtahJazzStadium.png"
  },
  {
   team_name: teams[27],
   stadium_name: "Capital One Arena",
-  location: [38.898056, -77.020833],
+  location: [37.898056, -77.020833],
   icons: WizardsIcon,
   url:"https://stats.nba.com/team/1610612764/franchise-leaders/",
   gp_lead:games[27],
@@ -644,7 +685,8 @@ var myMap = L.map("map", {
   ast_lead: assists[26],
   reb_lead: rebounds[27],
   stl_lead:steals[27],
-  blk_lead:blocks[27]
+  blk_lead:blocks[27],
+  stadium_image: "static/photos/WashingtonWizardsStadium.png"
  }
 ];
 
@@ -664,6 +706,6 @@ url_list = []
   L.marker(city.location, 
   {icon: city.icons}
   )
-    .bindPopup("<h1>"+city.team_name+"</h1> <h3> "+ city.stadium_name + "<hr><br> All Time Stat Leaders (Per Game) <hr> Games Played: " +city.gp_lead+ "<br> Points: " +city.pt_lead+ "<br> Assists: " +city.ast_lead+ "<br> Rebounds: "+city.reb_lead+" <br> Steals: "+city.stl_lead+" <br> Blocks: "+city.blk_lead+" </h3> <hr>  <a href =" + city.url +"> View All Time Stats </a>")
+    .bindPopup("<h1>"+city.team_name+"</h1> <h3> "+ city.stadium_name + "<hr><br> All Time Stat Leaders (Per Game) <hr> Games Played: " +city.gp_lead+ "<br> Points: " +city.pt_lead+ "<br> Assists: " +city.ast_lead+ "<br> Rebounds: "+city.reb_lead+" <br> Steals: "+city.stl_lead+" <br> Blocks: "+city.blk_lead+" </h3> <hr>  <a href =" + city.url +"> View All Time Stats </a> <hr> <img src = '" + city.stadium_image +"'width=175px, height=100px>")
     .addTo(myMap);
  }

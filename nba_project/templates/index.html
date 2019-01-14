@@ -12,17 +12,23 @@
   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
   crossorigin=""></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/js/style.css">
+
+    <script>
+        function Action() {
+            alert('HELLO');
+        }
+    </script>
 </head>
 
 <body>
   <!-- The div where we will inject our map -->
   <div id="map"></div>
-  <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape</a></p>
-
-
-
 
 
   <!-- API key -->
@@ -32,6 +38,8 @@
   <!-- Our JS -->
   <script type="text/javascript" src="../static/js/logic.js"></script>
     <script type="text/javascript" src="../static/js/style.css"></script>
+
+
 
 </body>
 </html>

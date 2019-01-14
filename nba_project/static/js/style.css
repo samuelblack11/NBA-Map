@@ -1,7 +1,4 @@
-body {
-  padding: 0;
-  margin: 0;
-}
+
 
 #map,
 body,
@@ -9,6 +6,23 @@ html {
   height: 100%;
 }
 
+
+
 h1 {
   text-align: center;
 }
+
+
+<style> 
+   .backButton{
+      font-size: 3.5em;
+    } 
+
+    .star{
+  font-size: 1.5em;
+} 
+
+    .target{
+  font-size: 2.1em;
+} 
+</style>

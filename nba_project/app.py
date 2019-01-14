@@ -36,6 +36,10 @@ def scraper():
     #team_leaders.update({}, team_leaders_data, upsert=True)
     return redirect("/", code=302)
 
+@app.route("/data.html")
+def data_table():
+    return render_template("data.html", code=302)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
