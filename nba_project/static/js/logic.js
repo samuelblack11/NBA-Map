@@ -11,7 +11,7 @@ var myMap = L.map("map", {
 
 
 L.easyButton( '<span class="star">&starf;</span>', function(){
-window.location.href = "/scrape"}, 'Scrape Data from NBA.com').addTo(myMap);
+window.location.href = "/scrape"}, 'Scrape Data from stats.NBA.com').addTo(myMap);
 
 L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
   window.location.href = "data.html";
@@ -28,7 +28,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  });
  var CelticsIcon = L.icon({
     iconUrl : "static/photos/BostonCeltics.png",
-    iconSize:     [48, 65], // size of the icon
+    iconSize:     [52, 65], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -36,7 +36,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  });
  var NetsIcon = L.icon({
     iconUrl : "static/photos/BrooklynNets.png",
-    iconSize:     [43, 65], // size of the icon
+    iconSize:     [47, 65], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -172,7 +172,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  });
  var KnicksIcon = L.icon({
     iconUrl : "static/photos/NewYorkKnicks.png",
-    iconSize:     [53, 95], // size of the icon
+    iconSize:     [57, 95], // size of the icon
    // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
    // shadowAnchor: [4, 62],  // the same for the shadow
@@ -271,7 +271,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  var cities = [{
   team_name: teams[0],
   stadium_name: "State Farm Arena",
-  location: [33.7573, -84.3963],
+  location: [33.0573, -84.3963],
   icons: HawksIcon,
   url: "https://stats.nba.com/team/1610612737/franchise-leaders/",
   gp_lead:games[0],
@@ -285,7 +285,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[1],
   stadium_name: "TD Garden",
-  location: [42.3662, -71.0621],
+  location: [41.8662, -71.0621],
   icons: CelticsIcon,
   url: "https://stats.nba.com/team/1610612738/franchise-leaders/",
   gp_lead:games[1].slice(1,-1),
@@ -341,7 +341,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: "Cleveland Cavaliers",
   stadium_name: "Quicken Loans Arena",
-  location: [41.4965, -81.6882],
+  location: [40.4965, -81.6882],
   icons: CavaliersIcon,
   url: "https://stats.nba.com/team/1610612739/franchise-leaders/",
   gp_lead:"Lebron James (849)",
@@ -355,7 +355,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[4],
   stadium_name: "American Airlines Center",
-  location: [32.7905, -96.8104],
+  location: [32.3905, -96.8104],
   icons: MavericksIcon,
   url: "https://stats.nba.com/team/1610612742/franchise-leaders/",
   gp_lead:games[4].slice(1,-1),
@@ -369,7 +369,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[5],
   stadium_name: "Pepsi Center",
-  location: [39.7487, -105.0077],
+  location: [39.2487, -105.0077],
   icons: NuggetsIcon,
   url: "https://stats.nba.com/team/1610612743/franchise-leaders/",
   gp_lead:games[5],
@@ -411,7 +411,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[9],
   stadium_name: "Toyota Center",
-  location: [29.7508, -95.3621],
+  location: [28.7508, -95.3621],
   icons: RocketsIcon,
   url: "https://stats.nba.com/team/1610612745/franchise-leaders/",
   gp_lead:games[9].slice(1,-1),
@@ -593,7 +593,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[21],
   stadium_name: "Talking Stick Arena",
-  location: [33.445833, -112.071389],
+  location: [33.045833, -112.071389],
   icons: SunsIcon,
   url:"https://stats.nba.com/team/1610612756/franchise-leaders/",
   gp_lead:games[21],
@@ -635,7 +635,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[24],
   stadium_name: "AT&T Center",
-  location: [29.426944, -98.4375],
+  location: [28.826944, -98.4375],
   icons: SpursIcon,
   url:"https://stats.nba.com/team/1610612759/franchise-leaders/",
   gp_lead:games[24].slice(1,-1),
@@ -663,7 +663,7 @@ L.easyButton( '<span class="target"> &CirclePlus;</span>', function(){
  {
   team_name: teams[26],
   stadium_name: "Vivint Smart Home Arena",
-  location: [40.768333, -111.901111],
+  location: [40.268333, -111.901111],
   icons: JazzIcon,
   url:"https://stats.nba.com/team/1610612762/franchise-leaders/",
   gp_lead:games[26].slice(1,-1),
